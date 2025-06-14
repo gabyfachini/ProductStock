@@ -1,25 +1,52 @@
-# Gerenciador de Estoque Simples
+# 📦 Product Stock Manager
 
-Este é um **gerenciador de estoque simples** criado em C# que permite aos usuários realizar operações básicas de gerenciamento de estoque através do console. O sistema é projetado para ser simples e eficiente.
+The **Product Stock Manager** is a simple console application developed in **C#** that allows users to manage a product inventory. This project demonstrates fundamental concepts of **Object-Oriented Programming (OOP)**, such as abstraction, encapsulation, and inheritance.
 
-## Funcionalidades
+---
 
-O gerenciador de estoque oferece as seguintes funcionalidades:
+## 🚀 Features
 
-1. **Cadastrar Produtos**: Permite ao usuário adicionar novos produtos ao estoque, incluindo informações como nome, quantidade e preço.
-2. **Cadastrar Mais Estoque**: Permite ao usuário adicionar uma quantidade adicional de produtos já cadastrados no estoque.
-3. **Visualizar Produtos e Estoque**: Exibe uma lista de todos os produtos cadastrados, junto com a quantidade disponível em estoque.
-4. **Sair**: Encerra o programa.
+- ✅ Register products with name, supplier, category, and stock quantity.
+- 🔄 Update stock quantity for existing products.
+- 📜 View the list of registered products and their stock levels.
+- ❌ Exit the application through a simple text menu.
 
-## Como usar
+---
 
-### Requisitos
+## 🏗️ Project Structure
 
-- .NET 6 ou superior (para compilar e rodar o código).
-- Ambiente de desenvolvimento (IDE) como **Visual Studio** ou **Visual Studio Code**, ou compilação via terminal com o comando `dotnet run`.
+- **Stock.cs** → Abstract base class that defines common properties (Product, Supplier, Category, Quantity) and abstract methods.
+- **Store.cs** → Inherits from Stock and implements product management functions.
+- **ProductList.cs** → Manages a list of products with options to add, update, and list products.
+- **Program.cs** → Main file with the menu that handles user interactions.
 
-## Tecnologias
+---
+
+## 💻 Technologies
 
 - C#
-- .NET 6 ou superior
-- Console Application
+- .NET Console App
+
+---
+
+## 🧠 Concepts Used
+
+- Object-Oriented Programming (OOP)
+- Lists and Collections
+- Loops and Conditional Statements
+- Console Input and Output
+
+---
+
+## 🚦 How to Run
+
+1. Clone or download the repository.
+2. Open the solution in Visual Studio or your preferred IDE.
+3. Build and run the project (`F5` or Run).
+4. Use the console menu to interact with the product stock.
+
+---
+
+## 📜 License
+
+This project is for educational purposes and does not have a specific license.
