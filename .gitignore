@@ -1,18 +1,46 @@
+## -----------------------------------------------
+## .gitignore for C# / .NET / Visual Studio project
+## -----------------------------------------------
 
-Gerenciado de Estoque/bin/Debug/net8.0/Gerenciado de Estoque.deps.json
-Gerenciado de Estoque/bin/Debug/net8.0/Gerenciado de Estoque.dll
-Gerenciado de Estoque/bin/Debug/net8.0/Gerenciado de Estoque.pdb
-Gerenciado de Estoque/bin/Debug/net8.0/Gerenciado de Estoque.exe
-Gerenciado de Estoque/bin/Debug/net8.0/Gerenciado de Estoque.runtimeconfig.json
-Gerenciado de Estoque/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+# Build output folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages (restored automatically)
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Rider IDE
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log and temp files
+*.log
+*.tmp
 *.cache
-*.exe
-*.BuildWithSkipAnalyzers
-*.dll
-*.txt
-*.editorconfig
-Gerenciado de Estoque/obj/project.assets.json
-Gerenciado de Estoque/obj/Debug/net8.0/Gerenciado de Estoque.pdb
-Gerenciado de Estoque/obj/Gerenciado de Estoque.csproj.nuget.dgspec.json
-Gerenciado de Estoque/obj/Gerenciado de Estoque.csproj.nuget.g.targets
-Gerenciado de Estoque/obj/Gerenciado de Estoque.csproj.nuget.g.props
+
+# Publish output
+publish/
+**/publish/
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coveragexml

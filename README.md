@@ -1,52 +1,101 @@
-# 📦 Product Stock Manager
-
-The **Product Stock Manager** is a simple console application developed in **C#** that allows users to manage a product inventory. This project demonstrates fundamental concepts of **Object-Oriented Programming (OOP)**, such as abstraction, encapsulation, and inheritance.
+# 📦 Stock Manager
 
 ---
 
-## 🚀 Features
+## 🇧🇷 Português
 
-- ✅ Register products with name, supplier, category, and stock quantity.
-- 🔄 Update stock quantity for existing products.
-- 📜 View the list of registered products and their stock levels.
-- ❌ Exit the application through a simple text menu.
+### Sobre o projeto
+
+Sistema de gerenciamento de estoque desenvolvido em **C# (.NET)** como projeto de aprendizado de Programação Orientada a Objetos (POO). O programa roda no terminal e permite cadastrar produtos, controlar quantidades e acompanhar o valor total do inventário.
+
+### Funcionalidades
+
+- ✅ Cadastrar produto com nome, fornecedor, categoria, quantidade e preço
+- ✅ Adicionar unidades ao estoque de um produto existente
+- ✅ Sobrescrever a quantidade em estoque de um produto
+- ✅ Remover produto da lista
+- ✅ Listar todos os produtos com valor total por item e valor total do inventário
+- ✅ Validação de entradas do usuário
+
+### Estrutura do projeto
+
+```
+StockManager/
+├── Program.cs          # Ponto de entrada — menu principal e loop de interação
+├── Stock.cs            # Classe abstrata Stock e implementação concreta Store
+├── ProductList.cs      # Gerenciamento da lista de produtos (adicionar, listar, atualizar, remover)
+```
+
+### Conceitos de POO aplicados
+
+| Conceito | Onde é usado |
+|---|---|
+| **Abstração** | Classe abstrata `Stock` define o contrato comum |
+| **Herança** | `Store` herda de `Stock` |
+| **Polimorfismo** | `AddProducts()`, `UpdateStock()` e `AddToStock()` sobrescritos em `Store` |
+| **Encapsulamento** | Propriedades com `get/set`, lista privada em `ProductList` |
+
+### Como executar
+
+**Pré-requisito:** .NET SDK instalado ([download](https://dotnet.microsoft.com/download))
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/stock-manager.git
+cd stock-manager
+
+# Execute o projeto
+dotnet run
+```
 
 ---
 
-## 🏗️ Project Structure
+## 🇺🇸 English
 
-- **Stock.cs** → Abstract base class that defines common properties (Product, Supplier, Category, Quantity) and abstract methods.
-- **Store.cs** → Inherits from Stock and implements product management functions.
-- **ProductList.cs** → Manages a list of products with options to add, update, and list products.
-- **Program.cs** → Main file with the menu that handles user interactions.
+### About
+
+A terminal-based **inventory management system** built in **C# (.NET)** as a learning project focused on Object-Oriented Programming (OOP) concepts. It allows users to register products, manage stock quantities, and track total inventory value.
+
+### Features
+
+- ✅ Register a product with name, supplier, category, quantity, and unit price
+- ✅ Add units to an existing product's stock
+- ✅ Overwrite the current stock quantity of a product
+- ✅ Remove a product from the list
+- ✅ List all products with per-item total value and overall inventory value
+- ✅ Input validation throughout
+
+### Project structure
+
+```
+StockManager/
+├── Program.cs          # Entry point — main menu and interaction loop
+├── Stock.cs            # Abstract class Stock and concrete implementation Store
+├── ProductList.cs      # Product list management (add, list, update, remove)
+```
+
+### OOP concepts applied
+
+| Concept | Where it's used |
+|---|---|
+| **Abstraction** | Abstract class `Stock` defines the shared contract |
+| **Inheritance** | `Store` inherits from `Stock` |
+| **Polymorphism** | `AddProducts()`, `UpdateStock()` and `AddToStock()` overridden in `Store` |
+| **Encapsulation** | Properties with `get/set`, private list inside `ProductList` |
+
+### How to run
+
+**Prerequisite:** .NET SDK installed ([download](https://dotnet.microsoft.com/download))
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/stock-manager.git
+cd stock-manager
+
+# Run the project
+dotnet run
+```
 
 ---
 
-## 💻 Technologies
-
-- C#
-- .NET Console App
-
----
-
-## 🧠 Concepts Used
-
-- Object-Oriented Programming (OOP)
-- Lists and Collections
-- Loops and Conditional Statements
-- Console Input and Output
-
----
-
-## 🚦 How to Run
-
-1. Clone or download the repository.
-2. Open the solution in Visual Studio or your preferred IDE.
-3. Build and run the project (`F5` or Run).
-4. Use the console menu to interact with the product stock.
-
----
-
-## 📜 License
-
-This project is for educational purposes and does not have a specific license.
+*Developed as a C# / OOP learning project.*
