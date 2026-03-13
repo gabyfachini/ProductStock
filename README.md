@@ -2,7 +2,7 @@
 
 ---
 
-## 🇧🇷 Português
+## [🇧🇷] Português
 
 ### Sobre o projeto
 
@@ -50,7 +50,7 @@ dotnet run
 
 ---
 
-## 🇺🇸 English
+## [🇺🇸] English
 
 ### About
 
